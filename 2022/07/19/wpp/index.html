@@ -367,9 +367,13 @@
             <div class="row tag-cate">
                 <div class="col s7">
                     
-                          <div class="article-tag">
-                            <span class="chip bg-color">无标签</span>
-                          </div>
+                    <div class="article-tag">
+                        
+                            <a href="/tags/CTF/">
+                                <span class="chip bg-color">CTF</span>
+                            </a>
+                        
+                    </div>
                     
                 </div>
                 <div class="col s5 right-align">
@@ -423,7 +427,7 @@
         <div class="card-content article-card-content">
             <div id="articleContent">
                 <p>DSCTF+连着三天是NepCT，然后做了一下，虽然但是，只做了misc，正常的比赛的web目前都做不了捏。<br>Web太难了，SQL注入和PHP反序列化永远做一个忘一个。<br>顺便学了一下用hexo在GitHub搭个人博客，也算是学了点web（不是）</p>
-<p>DoubleHappiness<br><img src="/2022/07/19/wpp/1.png"><br>使用<a target="_blank" rel="noopener" href="http://www.minigps.net/fc.html%E8%BD%AC%E6%8D%A2%E5%BA%A6%E5%88%86%E7%A7%92%E7%9A%84GPS%E5%9D%90%E6%A0%87%E4%B8%BA%E7%BB%8F%E7%BA%AC%E5%BA%A6%E5%B8%B8%E7%94%A8%E6%A0%BC%E5%BC%8F(120.1,30.278125)%E5%9C%B0%E7%82%B9%E4%B8%BA%E6%B5%99%E5%95%86%E8%B4%A2%E5%AF%8C%E4%B8%AD%E5%BF%83%E3%80%82">http://www.minigps.net/fc.html转换度分秒的GPS坐标为经纬度常用格式(120.1,30.278125)地点为浙商财富中心。</a><br>可以确定的是外卖送到了浙商财富中心，并且根据之前的图片极有可能坏女人和贝塔点的是附近的瑞幸咖啡（打钱！！！<br>这个时候可以分析一下，外卖极有可能是被点了附近同一品牌的坏蛋拿走了。一般外卖会有好评返，既然这个坏蛋连外卖都偷，那么返现的机会也一定不会放过，所以找到附近的瑞星咖啡店为<br>瑞幸咖啡(莲花商务中心店)<br><img src="/2022/07/19/wpp/2.png"><br>上美团外卖APP上找到这家店铺，查看评论区中日期为7月13日的评论。<br>找到一个可疑的匿名用户，在图片靠后的位置不难发现有坏女人和贝塔点的624号外卖，仔细观察图片后可以发现右下角有这个人微博的ID，接下来可以去微博一探究竟。<br><img src="/2022/07/19/wpp/3.png"><br><img src="/2022/07/19/wpp/4.png"><br>果然没错，就是这小子。可以看到最新的一条微博发了一张宝石山俯瞰西湖夜景图，在图片右下角水印处有马赛克，隐隐约约可以看出有NepCTF字样。<br><img src="/2022/07/19/wpp/5.png"><br>可以把这个马赛克先抠出来<br><img src="/2022/07/19/wpp/6.png"><br>再使用unRedacter工具来破解，需要注意的是，抠出来的马赛克要调整一下比例(304x40)，还要在字典里添加大写英文字母、数字以及下划线，大概跑20min可以出结果。<br><img src="/2022/07/19/wpp/7.png"><br><img src="/2022/07/19/wpp/8.png"><br>就感到一个离谱<br>我的评价是：偷外卖还带评论么<br>还有这个像素修复技术，学到了学到了。</p>
+<p>DoubleHappiness<br><img src="/2022/07/19/wpp/1.png"><br>使用<a target="_blank" rel="noopener" href="http://www.minigps.net/fc.html">http://www.minigps.net/fc.html</a><br>转换度分秒的GPS坐标为经纬度常用格式(120.1,30.278125)地点为浙商财富中心。<br>可以确定的是外卖送到了浙商财富中心，并且根据之前的图片极有可能坏女人和贝塔点的是附近的瑞幸咖啡（打钱！！！<br>这个时候可以分析一下，外卖极有可能是被点了附近同一品牌的坏蛋拿走了。一般外卖会有好评返，既然这个坏蛋连外卖都偷，那么返现的机会也一定不会放过，所以找到附近的瑞星咖啡店为<br>瑞幸咖啡(莲花商务中心店)<br><img src="/2022/07/19/wpp/2.png"><br>上美团外卖APP上找到这家店铺，查看评论区中日期为7月13日的评论。<br>找到一个可疑的匿名用户，在图片靠后的位置不难发现有坏女人和贝塔点的624号外卖，仔细观察图片后可以发现右下角有这个人微博的ID，接下来可以去微博一探究竟。<br><img src="/2022/07/19/wpp/3.png"><br><img src="/2022/07/19/wpp/4.png"><br>果然没错，就是这小子。可以看到最新的一条微博发了一张宝石山俯瞰西湖夜景图，在图片右下角水印处有马赛克，隐隐约约可以看出有NepCTF字样。<br><img src="/2022/07/19/wpp/5.png"><br>可以把这个马赛克先抠出来<br><img src="/2022/07/19/wpp/6.png"><br>再使用unRedacter工具来破解，需要注意的是，抠出来的马赛克要调整一下比例(304x40)，还要在字典里添加大写英文字母、数字以及下划线，大概跑20min可以出结果。<br><img src="/2022/07/19/wpp/7.png"><br><img src="/2022/07/19/wpp/8.png"><br>就感到一个离谱<br>我的评价是：偷外卖还带评论么<br>还有这个像素修复技术，学到了学到了。</p>
 <p>少见的base<br>jphide隐写，这个题目没有其他提示首先可以猜测是无密码的<br>（怎么回事，我从来没想过可以无密码，是我孤陋寡闻了）</p>
 <p>DSCTF<br>第一个MISC题就是《区块链以太坊》这是人出的么？</p>
 <p>DSCTF就写了签到<br>NepCTF出来俩，对密码学感到一个痛心，<br>一个简单的签到题，知道中国剩余定理和RSA基本原理就能做出来。<br>但是高数摆烂了导致一时半会没想起来。<br>然后对于NepCTF的web题，感觉都出的非常好，虽然我不会，但是事后看师傅们的出题思路和WP，觉得非常用心，质量也高。打算以后自我练习和剖析。<br>联想从开始到现在坐的misc，大多数除了要用到特定的一些工具以外，还是靠自己的学习积累，以及脑洞（毕竟不是每个人都会对一个地方多想一步）</p>
@@ -491,7 +495,11 @@
                 <div class="post-meta__tag-list" style="display: inline-block;">
                     
                         <div class="article-tag">
-                            <span class="chip bg-color">无标签</span>
+                            
+                                <a href="/tags/CTF/">
+                                    <span class="chip bg-color">CTF</span>
+                                </a>
+                            
                         </div>
                     
                 </div>
@@ -621,6 +629,14 @@ gitment.render('gitment-content');
                     </div>
                 </div>
 
+                
+                <div class="card-action article-tags">
+                    
+                    <a href="/tags/CTF/">
+                        <span class="chip bg-color">CTF</span>
+                    </a>
+                    
+                </div>
                 
             </div>
         </div>
