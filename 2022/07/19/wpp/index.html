@@ -4,9 +4,8 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="祝洛天依十周年生日快乐, Kkkkkkkotori&#39;s Blog">
-    <meta name="description" content="十年并肩，依起同行！
-">
+    <meta name="keywords" content="wpp, Kkkkkkkotori&#39;s Blog">
+    <meta name="description" content="DSCTF+连着三天是NepCT，然后做了一下，虽然但是，只做了misc，正常的比赛的web目前都做不了捏。Web太难了，SQL注入和PHP反序列化永远做一个忘一个。顺便学了一下用hexo在GitHub搭个人博客，也算是学了点web（不是）">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -20,7 +19,7 @@
 
     
 
-    <title>祝洛天依十周年生日快乐 | Kkkkkkkotori&#39;s Blog</title>
+    <title>wpp | Kkkkkkkotori&#39;s Blog</title>
     <link rel="icon" type="image/jpeg" href="/favicon.jpg">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.min.css">
@@ -249,12 +248,12 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/0.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/3.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">祝洛天依十周年生日快乐</h1>
+                    <h1 class="description center-align post-title">wpp</h1>
                 </div>
             </div>
         </div>
@@ -382,28 +381,28 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2022-07-10
+                    2022-07-19
                 </div>
                 
 
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-check fa-fw"></i>更新日期:&nbsp;&nbsp;
-                    2022-07-10
+                    2022-07-19
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    8
+                    804
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-clock fa-fw"></i>阅读时长:&nbsp;&nbsp;
-                    1 分
+                    2 分
                 </div>
                 
 
@@ -423,7 +422,12 @@
 
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <p>十年并肩，依起同行！</p>
+                <p>DSCTF+连着三天是NepCT，然后做了一下，虽然但是，只做了misc，正常的比赛的web目前都做不了捏。<br>Web太难了，SQL注入和PHP反序列化永远做一个忘一个。<br>顺便学了一下用hexo在GitHub搭个人博客，也算是学了点web（不是）</p>
+<p>DoubleHappiness<br><img src="/2022/07/19/wpp/1.png"><br>使用<a target="_blank" rel="noopener" href="http://www.minigps.net/fc.html%E8%BD%AC%E6%8D%A2%E5%BA%A6%E5%88%86%E7%A7%92%E7%9A%84GPS%E5%9D%90%E6%A0%87%E4%B8%BA%E7%BB%8F%E7%BA%AC%E5%BA%A6%E5%B8%B8%E7%94%A8%E6%A0%BC%E5%BC%8F(120.1,30.278125)%E5%9C%B0%E7%82%B9%E4%B8%BA%E6%B5%99%E5%95%86%E8%B4%A2%E5%AF%8C%E4%B8%AD%E5%BF%83%E3%80%82">http://www.minigps.net/fc.html转换度分秒的GPS坐标为经纬度常用格式(120.1,30.278125)地点为浙商财富中心。</a><br>可以确定的是外卖送到了浙商财富中心，并且根据之前的图片极有可能坏女人和贝塔点的是附近的瑞幸咖啡（打钱！！！<br>这个时候可以分析一下，外卖极有可能是被点了附近同一品牌的坏蛋拿走了。一般外卖会有好评返，既然这个坏蛋连外卖都偷，那么返现的机会也一定不会放过，所以找到附近的瑞星咖啡店为<br>瑞幸咖啡(莲花商务中心店)<br><img src="/2022/07/19/wpp/2.png"><br>上美团外卖APP上找到这家店铺，查看评论区中日期为7月13日的评论。<br>找到一个可疑的匿名用户，在图片靠后的位置不难发现有坏女人和贝塔点的624号外卖，仔细观察图片后可以发现右下角有这个人微博的ID，接下来可以去微博一探究竟。<br><img src="/2022/07/19/wpp/3.png"><br><img src="/2022/07/19/wpp/4.png"><br>果然没错，就是这小子。可以看到最新的一条微博发了一张宝石山俯瞰西湖夜景图，在图片右下角水印处有马赛克，隐隐约约可以看出有NepCTF字样。<br><img src="/2022/07/19/wpp/5.png"><br>可以把这个马赛克先抠出来<br><img src="/2022/07/19/wpp/6.png"><br>再使用unRedacter工具来破解，需要注意的是，抠出来的马赛克要调整一下比例(304x40)，还要在字典里添加大写英文字母、数字以及下划线，大概跑20min可以出结果。<br><img src="/2022/07/19/wpp/7.png"><br><img src="/2022/07/19/wpp/8.png"><br>就感到一个离谱<br>我的评价是：偷外卖还带评论么<br>还有这个像素修复技术，学到了学到了。</p>
+<p>少见的base<br>jphide隐写，这个题目没有其他提示首先可以猜测是无密码的<br>（怎么回事，我从来没想过可以无密码，是我孤陋寡闻了）</p>
+<p>DSCTF<br>第一个MISC题就是《区块链以太坊》这是人出的么？</p>
+<p>DSCTF就写了签到<br>NepCTF出来俩，对密码学感到一个痛心，<br>一个简单的签到题，知道中国剩余定理和RSA基本原理就能做出来。<br>但是高数摆烂了导致一时半会没想起来。<br>然后对于NepCTF的web题，感觉都出的非常好，虽然我不会，但是事后看师傅们的出题思路和WP，觉得非常用心，质量也高。打算以后自我练习和剖析。<br>联想从开始到现在坐的misc，大多数除了要用到特定的一些工具以外，还是靠自己的学习积累，以及脑洞（毕竟不是每个人都会对一个地方多想一步）</p>
+<p>后面还有强网杯和网鼎杯，希望也能学到一些东西。<br>再放远点开学的省赛，也需要努力才能赶上。</p>
 
                 
             </div>
@@ -450,7 +454,7 @@
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="https://kkkkkkkotori.github.io/2022/07/10/plan/">https://kkkkkkkotori.github.io/2022/07/10/plan/</a>
+                    <a href="https://kkkkkkkotori.github.io/2022/07/19/wpp/">https://kkkkkkkotori.github.io/2022/07/19/wpp/</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -527,7 +531,7 @@
         repo: '',
         owner: '',
         admin: null,
-        id: '2022-07-10T18-30-24',
+        id: '2022-07-19T21-25-31',
         distractionFreeMode: false  // Facebook-like distraction free mode
     });
 
@@ -551,7 +555,7 @@
 <script src="/libs/gitment/gitment.js"></script>
 <script>
 var gitment = new Gitment({
-    id: 'Sun Jul 10 2022 18:30:24 GMT+0800',
+    id: 'Tue Jul 19 2022 21:25:31 GMT+0800',
     owner: '',
     repo: '',
     oauth: {
@@ -584,9 +588,10 @@ gitment.render('gitment-content');
 <article id="prenext-posts" class="prev-next articles">
     <div class="row article-row">
         
-        <div class="article col s12 m6" data-aos="fade-up">
+        <div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up">
             <div class="article-badge left-badge text-color">
-                <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
+                <i class="far fa-dot-circle"></i>&nbsp;本篇
+            </div>
             <div class="card">
                 <a href="/2022/07/19/wpp/">
                     <div class="card-image">
@@ -604,9 +609,9 @@ gitment.render('gitment-content');
                         
                     </div>
                     <div class="publish-info">
-                        <span class="publish-date">
-                            <i class="far fa-clock fa-fw icon-date"></i>2022-07-19
-                        </span>
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2022-07-19
+                            </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-user fa-fw"></i>
@@ -615,6 +620,7 @@ gitment.render('gitment-content');
                         </span>
                     </div>
                 </div>
+
                 
             </div>
         </div>
@@ -625,13 +631,13 @@ gitment.render('gitment-content');
                 下一篇&nbsp;<i class="fas fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2022/07/10/hello-world/">
+                <a href="/2022/07/10/plan/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/3.jpg" class="responsive-img" alt="怎么回事捏">
+                        <img src="/medias/featureimages/0.jpg" class="responsive-img" alt="祝洛天依十周年生日快乐">
                         
-                        <span class="card-title">怎么回事捏</span>
+                        <span class="card-title">祝洛天依十周年生日快乐</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
