@@ -390,21 +390,21 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-check fa-fw"></i>更新日期:&nbsp;&nbsp;
-                    2022-09-12
+                    2022-09-15
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    639
+                    1.5k
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-clock fa-fw"></i>阅读时长:&nbsp;&nbsp;
-                    2 分
+                    5 分
                 </div>
                 
 
@@ -445,8 +445,6 @@
 <pre class="language-cpp" data-language="cpp"><code class="language-cpp"><span class="token number">29</span>
 <span class="token number">30</span></code></pre>
 
-
-
 <h1 id="念数字"><a href="#念数字" class="headerlink" title="念数字"></a>念数字</h1><p>输入一个整数，输出每个数字对应的拼音。当整数为负数时，先输出<code>fu</code>字。十个数字对应的拼音如下：</p>
 <p><strong>输入格式：</strong></p>
 <p>输入在一行中给出一个整数，如：<code>1234</code>。</p>
@@ -468,7 +466,7 @@
 <pre class="language-cpp" data-language="cpp"><code class="language-cpp"><span class="token macro property"><span class="token directive-hash">#</span><span class="token directive keyword">include</span> <span class="token string">&lt;stdio.h&gt;</span></span>
 
 <span class="token keyword">int</span> <span class="token function">reverse</span><span class="token punctuation">(</span> <span class="token keyword">int</span> number <span class="token punctuation">)</span><span class="token punctuation">;</span>
-    
+
 <span class="token keyword">int</span> <span class="token function">main</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
 <span class="token punctuation">{</span>
     <span class="token keyword">int</span> n<span class="token punctuation">;</span>
@@ -479,20 +477,13 @@
     <span class="token keyword">return</span> <span class="token number">0</span><span class="token punctuation">;</span>
 <span class="token punctuation">}</span>
 
-<span class="token comment">/* 你的代码将被嵌在这里 */</span>
-</code></pre>
+<span class="token comment">/* 你的代码将被嵌在这里 */</span></code></pre>
 
 <p><strong>输入样例：</strong></p>
 <pre class="language-cpp" data-language="cpp"><code class="language-cpp"><span class="token operator">-</span><span class="token number">12340</span></code></pre>
 
 <p><strong>输出样例：</strong></p>
 <pre class="language-cpp" data-language="cpp"><code class="language-cpp"><span class="token operator">-</span><span class="token number">4321</span></code></pre>
-
-
-
-
-
-
 
 <pre class="language-cpp" data-language="cpp"><code class="language-cpp"><span class="token keyword">int</span> x <span class="token operator">=</span> <span class="token number">5</span><span class="token punctuation">,</span> y <span class="token operator">=</span> <span class="token number">7</span><span class="token punctuation">;</span>
 <span class="token keyword">void</span> <span class="token function">swap</span> <span class="token punctuation">(</span> <span class="token punctuation">)</span>
@@ -508,8 +499,7 @@
       <span class="token function">printf</span> <span class="token punctuation">(</span><span class="token string">"%d,%d \n"</span><span class="token punctuation">,</span> x <span class="token punctuation">,</span> y <span class="token punctuation">)</span> <span class="token punctuation">;</span>
 
       <span class="token keyword">return</span> <span class="token number">0</span> <span class="token punctuation">;</span>
-<span class="token punctuation">}</span>
-</code></pre>
+<span class="token punctuation">}</span></code></pre>
 
 <p>A.3,8</p>
 <p>B.8,3</p>
@@ -541,6 +531,83 @@
     <span class="token keyword">return</span> <span class="token number">0</span><span class="token punctuation">;</span>
 <span class="token punctuation">}</span></code></pre>
 
+
+
+<h1 id="跟奥巴马学编程"><a href="#跟奥巴马学编程" class="headerlink" title="跟奥巴马学编程"></a>跟奥巴马学编程</h1><p>美国总统奥巴马不仅呼吁所有人都学习编程，甚至以身作则编写代码，成为美国历史上首位编写计算机代码的总统。2014年底，为庆祝“计算机科学教育周”正式启动，奥巴马编写了很简单的计算机代码：在屏幕上画一个正方形。现在你也跟他一起画吧！</p>
+<p><strong>输入格式:</strong></p>
+<p>输入在一行中给出正方形边长N（3&lt;=N&lt;=20）和组成正方形边的某种字符C，间隔一个空格。</p>
+<p><strong>输出格式:</strong></p>
+<p>输出由给定字符C画出的正方形。但是注意到行间距比列间距大，所以为了让结果看上去更像正方形，我们输出的行数实际上是列数的50%（四舍五入取整）。</p>
+<p><strong>输入样例:</strong></p>
+<pre class="language-cpp" data-language="cpp"><code class="language-cpp"><span class="token number">10</span> a</code></pre>
+
+<p><strong>输出样例:</strong></p>
+<p>在这里给出相应的输出。例如：</p>
+<pre class="language-cpp" data-language="cpp"><code class="language-cpp">aaaaaaaaaa
+a        a
+a        a
+a        a
+aaaaaaaaaa</code></pre>
+
+
+
+<h1 id="ABC"><a href="#ABC" class="headerlink" title="ABC"></a>ABC</h1><p>给定区间[−231,231]内的 3 个整数 A、B 和 C，请判断 A+B 是否大于 C。</p>
+<p><strong>输入格式:</strong></p>
+<p>输入第 1 行给出正整数 T (≤10)，是测试用例的个数。随后给出 T 组测试用例，每组占一行，顺序给出 A、B 和 C。整数间以空格分隔。</p>
+<p><strong>输出格式:</strong></p>
+<p>对每组测试用例，在一行中输出 Case #X: true 如果 A+B&gt;C，否则输出 Case #X: false，其中 X 是测试用例的编号（从 1 开始）。</p>
+<p><strong>输入样例:</strong></p>
+<p>在这里给出一组输入。例如：</p>
+<pre class="language-cpp" data-language="cpp"><code class="language-cpp"><span class="token number">4</span>
+<span class="token number">1</span> <span class="token number">2</span> <span class="token number">3</span>
+<span class="token number">2</span> <span class="token number">3</span> <span class="token number">4</span>
+<span class="token number">2147483647</span> <span class="token number">0</span> <span class="token number">2147483646</span>
+<span class="token number">0</span> <span class="token operator">-</span><span class="token number">2147483648</span> <span class="token operator">-</span><span class="token number">2147483647</span></code></pre>
+
+<p><strong>输出样例:</strong></p>
+<p>在这里给出相应的输出。例如：</p>
+<pre class="language-cpp" data-language="cpp"><code class="language-cpp">Case #<span class="token number">1</span><span class="token operator">:</span> <span class="token boolean">false</span>
+Case #<span class="token number">2</span><span class="token operator">:</span> <span class="token boolean">true</span>
+Case #<span class="token number">3</span><span class="token operator">:</span> <span class="token boolean">true</span>
+Case #<span class="token number">4</span><span class="token operator">:</span> <span class="token boolean">false</span></code></pre>
+
+
+
+<h1 id="成绩等级分类"><a href="#成绩等级分类" class="headerlink" title="成绩等级分类"></a>成绩等级分类</h1><p>已知学生成绩与等级的对应关系为：<br>等级A: 90≤ score≤100<br>等级B: 80≤ score&lt;90<br>等级C: 70≤ score&lt;80<br>等级D: 60≤ score&lt;70<br>等级E: score&lt;60<br>编写程序输出学生成绩对应的等级。</p>
+<p><strong>输入格式:</strong></p>
+<p>输入成绩数值，比如50</p>
+<p>输出格式:</p>
+<p>输出50对应的等级 E</p>
+<p><strong>输入样例1:</strong></p>
+<pre class="language-cpp" data-language="cpp"><code class="language-cpp"><span class="token number">50</span></code></pre>
+
+<p><strong>输出样例1:</strong></p>
+<p>在这里给出相应的输出。例如：</p>
+<pre class="language-cpp" data-language="cpp"><code class="language-cpp">成绩等级为E</code></pre>
+
+<p><strong>输入样例2:</strong></p>
+<pre class="language-cpp" data-language="cpp"><code class="language-cpp"><span class="token number">105</span></code></pre>
+
+<p><strong>输出样例2:</strong></p>
+<p>在这里给出相应的输出。例如：</p>
+<pre class="language-cpp" data-language="cpp"><code class="language-cpp">成绩输入错误</code></pre>
+
+
+
+<h1 id="（3n-1）猜想"><a href="#（3n-1）猜想" class="headerlink" title="（3n+1）猜想"></a>（3n+1）猜想</h1><p>卡拉兹(Callatz)猜想：</p>
+<p>对任何一个自然数n，如果它是偶数，那么把它砍掉一半；如果它是奇数，那么把(3n+1)砍掉一半。这样一直反复砍下去，最后一定在某一步得到n=1。卡拉兹在1950年的世界数学家大会上公布了这个猜想，传说当时耶鲁大学师生齐动员，拼命想证明这个貌似很傻很天真的命题，结果闹得学生们无心学业，一心只证(3n+1)，以至于有人说这是一个阴谋，卡拉兹是在蓄意延缓美国数学界教学与科研的进展……</p>
+<p>我们今天的题目不是证明卡拉兹猜想，而是对给定的任一不超过1000的正整数n，简单地数一下，需要多少步（砍几下）才能得到n=1？</p>
+<p><strong>输入格式:</strong></p>
+<p>每个测试输入包含1个测试用例，即给出自然数n的值。</p>
+<p><strong>输出格式:</strong></p>
+<p>输出从n计算到1需要的步数。</p>
+<p><strong>输入样例:</strong></p>
+<pre class="language-cpp" data-language="cpp"><code class="language-cpp"><span class="token number">3</span></code></pre>
+
+<p><strong>输出样例:</strong></p>
+<pre class="language-cpp" data-language="cpp"><code class="language-cpp"><span class="token number">5</span></code></pre>
+
+<h1 id=""><a href="#" class="headerlink" title=""></a></h1>
                 
             </div>
             <hr/>
@@ -915,7 +982,7 @@
             <br>
             
                 &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
-                        class="white-color">1.8k</span>
+                        class="white-color">2.7k</span>
             
             
             
