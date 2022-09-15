@@ -5,9 +5,9 @@
 <head>
     <meta charset="utf-8">
     <meta name="keywords" content="Test, Kkkkkkkotori&#39;s Blog">
-    <meta name="description" content="求某月的天数输入年份year、月份month，判断该月的天数。闰年：能被4整除但不能被100整除或者能被400整除的年份是闰年。
+    <meta name="description" content="一.求某月的天数输入年份year、月份month，判断该月的天数。闰年：能被4整除但不能被100整除或者能被400整除的年份是闰年。
 **输入格式: **
-测试数据有多组，处理到文件尾。对于每组测试，输入两个整数，表示年份year和月份mont">
+测试数据有多组，处理到文件尾。对于每组测试，输入两个整数，表示年份year和月份mo">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -432,7 +432,7 @@
 
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h1 id="求某月的天数"><a href="#求某月的天数" class="headerlink" title="求某月的天数"></a>求某月的天数</h1><p>输入年份year、月份month，判断该月的天数。闰年：能被4整除但不能被100整除或者能被400整除的年份是闰年。</p>
+                <h1 id="一-求某月的天数"><a href="#一-求某月的天数" class="headerlink" title="一.求某月的天数"></a>一.求某月的天数</h1><p>输入年份year、月份month，判断该月的天数。闰年：能被4整除但不能被100整除或者能被400整除的年份是闰年。</p>
 <p>**输入格式: **</p>
 <p>测试数据有多组，处理到文件尾。对于每组测试，输入两个整数，表示年份year和月份month。</p>
 <p><strong>输出格式:</strong></p>
@@ -445,7 +445,7 @@
 <pre class="language-cpp" data-language="cpp"><code class="language-cpp"><span class="token number">29</span>
 <span class="token number">30</span></code></pre>
 
-<h1 id="念数字"><a href="#念数字" class="headerlink" title="念数字"></a>念数字</h1><p>输入一个整数，输出每个数字对应的拼音。当整数为负数时，先输出<code>fu</code>字。十个数字对应的拼音如下：</p>
+<h1 id="二-念数字"><a href="#二-念数字" class="headerlink" title="二.念数字"></a>二.念数字</h1><p>输入一个整数，输出每个数字对应的拼音。当整数为负数时，先输出<code>fu</code>字。十个数字对应的拼音如下：</p>
 <p><strong>输入格式：</strong></p>
 <p>输入在一行中给出一个整数，如：<code>1234</code>。</p>
 <p><strong>提示：整数包括负数、零和正数。</strong></p>
@@ -457,7 +457,7 @@
 <p><strong>输出样例:</strong></p>
 <pre class="language-cpp" data-language="cpp"><code class="language-cpp">fu Liu Ling Ling</code></pre>
 
-<h1 id="使用函数输出一个整数的逆序数"><a href="#使用函数输出一个整数的逆序数" class="headerlink" title="使用函数输出一个整数的逆序数"></a>使用函数输出一个整数的逆序数</h1><p>本题要求实现一个求整数的逆序数的简单函数。</p>
+<h1 id="三-使用函数输出一个整数的逆序数"><a href="#三-使用函数输出一个整数的逆序数" class="headerlink" title="三.使用函数输出一个整数的逆序数"></a>三.使用函数输出一个整数的逆序数</h1><p>本题要求实现一个求整数的逆序数的简单函数。</p>
 <p><strong>函数接口定义：</strong></p>
 <pre class="language-cpp" data-language="cpp"><code class="language-cpp"><span class="token keyword">int</span> <span class="token function">reverse</span><span class="token punctuation">(</span> <span class="token keyword">int</span> number <span class="token punctuation">)</span><span class="token punctuation">;</span></code></pre>
 
@@ -485,7 +485,85 @@
 <p><strong>输出样例：</strong></p>
 <pre class="language-cpp" data-language="cpp"><code class="language-cpp"><span class="token operator">-</span><span class="token number">4321</span></code></pre>
 
-<pre class="language-cpp" data-language="cpp"><code class="language-cpp"><span class="token keyword">int</span> x <span class="token operator">=</span> <span class="token number">5</span><span class="token punctuation">,</span> y <span class="token operator">=</span> <span class="token number">7</span><span class="token punctuation">;</span>
+
+
+
+
+<h1 id="四-跟奥巴马学编程"><a href="#四-跟奥巴马学编程" class="headerlink" title="四.跟奥巴马学编程"></a>四.跟奥巴马学编程</h1><p>美国总统奥巴马不仅呼吁所有人都学习编程，甚至以身作则编写代码，成为美国历史上首位编写计算机代码的总统。2014年底，为庆祝“计算机科学教育周”正式启动，奥巴马编写了很简单的计算机代码：在屏幕上画一个正方形。现在你也跟他一起画吧！</p>
+<p><strong>输入格式:</strong></p>
+<p>输入在一行中给出正方形边长N（3&lt;=N&lt;=20）和组成正方形边的某种字符C，间隔一个空格。</p>
+<p><strong>输出格式:</strong></p>
+<p>输出由给定字符C画出的正方形。但是注意到行间距比列间距大，所以为了让结果看上去更像正方形，我们输出的行数实际上是列数的50%（四舍五入取整）。</p>
+<p><strong>输入样例:</strong></p>
+<pre class="language-cpp" data-language="cpp"><code class="language-cpp"><span class="token number">10</span> a</code></pre>
+
+<p><strong>输出样例:</strong></p>
+<p>在这里给出相应的输出。例如：</p>
+<pre class="language-cpp" data-language="cpp"><code class="language-cpp">aaaaaaaaaa
+a        a
+a        a
+a        a
+aaaaaaaaaa</code></pre>
+
+
+
+<h1 id="五-ABC"><a href="#五-ABC" class="headerlink" title="五.ABC"></a>五.ABC</h1><p>给定区间[−231,231]内的 3 个整数 A、B 和 C，请判断 A+B 是否大于 C。</p>
+<p><strong>输入格式:</strong></p>
+<p>输入第 1 行给出正整数 T (≤10)，是测试用例的个数。随后给出 T 组测试用例，每组占一行，顺序给出 A、B 和 C。整数间以空格分隔。</p>
+<p><strong>输出格式:</strong></p>
+<p>对每组测试用例，在一行中输出 Case #X: true 如果 A+B&gt;C，否则输出 Case #X: false，其中 X 是测试用例的编号（从 1 开始）。</p>
+<p><strong>输入样例:</strong></p>
+<p>在这里给出一组输入。例如：</p>
+<pre class="language-cpp" data-language="cpp"><code class="language-cpp"><span class="token number">4</span>
+<span class="token number">1</span> <span class="token number">2</span> <span class="token number">3</span>
+<span class="token number">2</span> <span class="token number">3</span> <span class="token number">4</span>
+<span class="token number">2147483647</span> <span class="token number">0</span> <span class="token number">2147483646</span>
+<span class="token number">0</span> <span class="token operator">-</span><span class="token number">2147483648</span> <span class="token operator">-</span><span class="token number">2147483647</span></code></pre>
+
+<p><strong>输出样例:</strong></p>
+<p>在这里给出相应的输出。例如：</p>
+<pre class="language-cpp" data-language="cpp"><code class="language-cpp">Case #<span class="token number">1</span><span class="token operator">:</span> <span class="token boolean">false</span>
+Case #<span class="token number">2</span><span class="token operator">:</span> <span class="token boolean">true</span>
+Case #<span class="token number">3</span><span class="token operator">:</span> <span class="token boolean">true</span>
+Case #<span class="token number">4</span><span class="token operator">:</span> <span class="token boolean">false</span></code></pre>
+
+
+
+<h1 id="六-成绩等级分类"><a href="#六-成绩等级分类" class="headerlink" title="六.成绩等级分类"></a>六.成绩等级分类</h1><p>已知学生成绩与等级的对应关系为：<br>等级A: 90≤ score≤100<br>等级B: 80≤ score&lt;90<br>等级C: 70≤ score&lt;80<br>等级D: 60≤ score&lt;70<br>等级E: score&lt;60<br>编写程序输出学生成绩对应的等级。</p>
+<p><strong>输入格式:</strong></p>
+<p>输入成绩数值，比如50</p>
+<p>输出格式:</p>
+<p>输出50对应的等级 E</p>
+<p><strong>输入样例1:</strong></p>
+<pre class="language-cpp" data-language="cpp"><code class="language-cpp"><span class="token number">50</span></code></pre>
+
+<p><strong>输出样例1:</strong></p>
+<p>在这里给出相应的输出。例如：</p>
+<pre class="language-cpp" data-language="cpp"><code class="language-cpp">成绩等级为E</code></pre>
+
+<p><strong>输入样例2:</strong></p>
+<pre class="language-cpp" data-language="cpp"><code class="language-cpp"><span class="token number">105</span></code></pre>
+
+<p><strong>输出样例2:</strong></p>
+<p>在这里给出相应的输出。例如：</p>
+<pre class="language-cpp" data-language="cpp"><code class="language-cpp">成绩输入错误</code></pre>
+
+
+
+<h1 id="七-（3n-1）猜想"><a href="#七-（3n-1）猜想" class="headerlink" title="七.（3n+1）猜想"></a>七.（3n+1）猜想</h1><p>卡拉兹(Callatz)猜想：</p>
+<p>对任何一个自然数n，如果它是偶数，那么把它砍掉一半；如果它是奇数，那么把(3n+1)砍掉一半。这样一直反复砍下去，最后一定在某一步得到n=1。卡拉兹在1950年的世界数学家大会上公布了这个猜想，传说当时耶鲁大学师生齐动员，拼命想证明这个貌似很傻很天真的命题，结果闹得学生们无心学业，一心只证(3n+1)，以至于有人说这是一个阴谋，卡拉兹是在蓄意延缓美国数学界教学与科研的进展……</p>
+<p>我们今天的题目不是证明卡拉兹猜想，而是对给定的任一不超过1000的正整数n，简单地数一下，需要多少步（砍几下）才能得到n=1？</p>
+<p><strong>输入格式:</strong></p>
+<p>每个测试输入包含1个测试用例，即给出自然数n的值。</p>
+<p><strong>输出格式:</strong></p>
+<p>输出从n计算到1需要的步数。</p>
+<p><strong>输入样例:</strong></p>
+<pre class="language-cpp" data-language="cpp"><code class="language-cpp"><span class="token number">3</span></code></pre>
+
+<p><strong>输出样例:</strong></p>
+<pre class="language-cpp" data-language="cpp"><code class="language-cpp"><span class="token number">5</span></code></pre>
+
+<h1 id=""><a href="#" class="headerlink" title=""></a></h1><h1 id="选择"><a href="#选择" class="headerlink" title="选择"></a>选择</h1><pre class="language-cpp" data-language="cpp"><code class="language-cpp"><span class="token keyword">int</span> x <span class="token operator">=</span> <span class="token number">5</span><span class="token punctuation">,</span> y <span class="token operator">=</span> <span class="token number">7</span><span class="token punctuation">;</span>
 <span class="token keyword">void</span> <span class="token function">swap</span> <span class="token punctuation">(</span> <span class="token punctuation">)</span>
 <span class="token punctuation">{</span>
       <span class="token keyword">int</span> z <span class="token punctuation">;</span>
@@ -505,8 +583,7 @@
 <p>B.8,3</p>
 <p>C.5,7</p>
 <p>D.7,5</p>
-<p><strong>数组名作为参数时，以下叙述正确的是（ ）。</strong></p>
-<p>A.函数调用时是将实参数组的所有元素值传给形参。</p>
+<h2 id="一-数组名作为参数时，以下叙述正确的是（-）。"><a href="#一-数组名作为参数时，以下叙述正确的是（-）。" class="headerlink" title="一.数组名作为参数时，以下叙述正确的是（ ）。"></a>一.数组名作为参数时，以下叙述正确的是（ ）。</h2><p>A.函数调用时是将实参数组的所有元素值传给形参。</p>
 <p>B.函数调用时是将实参数组的第一个元素值传给形参。</p>
 <p>C.函数调用时是将实参数组的首地址传给形参。</p>
 <p>D.函数调用时是将实参数组的所有元素的地址传给形参。</p>
@@ -529,85 +606,8 @@
     <span class="token keyword">if</span><span class="token punctuation">(</span>  <span class="token operator">==</span> <span class="token number">1</span> <span class="token punctuation">)</span> <span class="token function">printf</span><span class="token punctuation">(</span><span class="token string">"各位数字之和是素数！\n"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
     <span class="token keyword">else</span> <span class="token function">printf</span><span class="token punctuation">(</span><span class="token string">"各位数字之和不是素数！\n"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
     <span class="token keyword">return</span> <span class="token number">0</span><span class="token punctuation">;</span>
-<span class="token punctuation">}</span></code></pre>
+<span class="token punctuation">}</span>  </code></pre>
 
-
-
-<h1 id="跟奥巴马学编程"><a href="#跟奥巴马学编程" class="headerlink" title="跟奥巴马学编程"></a>跟奥巴马学编程</h1><p>美国总统奥巴马不仅呼吁所有人都学习编程，甚至以身作则编写代码，成为美国历史上首位编写计算机代码的总统。2014年底，为庆祝“计算机科学教育周”正式启动，奥巴马编写了很简单的计算机代码：在屏幕上画一个正方形。现在你也跟他一起画吧！</p>
-<p><strong>输入格式:</strong></p>
-<p>输入在一行中给出正方形边长N（3&lt;=N&lt;=20）和组成正方形边的某种字符C，间隔一个空格。</p>
-<p><strong>输出格式:</strong></p>
-<p>输出由给定字符C画出的正方形。但是注意到行间距比列间距大，所以为了让结果看上去更像正方形，我们输出的行数实际上是列数的50%（四舍五入取整）。</p>
-<p><strong>输入样例:</strong></p>
-<pre class="language-cpp" data-language="cpp"><code class="language-cpp"><span class="token number">10</span> a</code></pre>
-
-<p><strong>输出样例:</strong></p>
-<p>在这里给出相应的输出。例如：</p>
-<pre class="language-cpp" data-language="cpp"><code class="language-cpp">aaaaaaaaaa
-a        a
-a        a
-a        a
-aaaaaaaaaa</code></pre>
-
-
-
-<h1 id="ABC"><a href="#ABC" class="headerlink" title="ABC"></a>ABC</h1><p>给定区间[−231,231]内的 3 个整数 A、B 和 C，请判断 A+B 是否大于 C。</p>
-<p><strong>输入格式:</strong></p>
-<p>输入第 1 行给出正整数 T (≤10)，是测试用例的个数。随后给出 T 组测试用例，每组占一行，顺序给出 A、B 和 C。整数间以空格分隔。</p>
-<p><strong>输出格式:</strong></p>
-<p>对每组测试用例，在一行中输出 Case #X: true 如果 A+B&gt;C，否则输出 Case #X: false，其中 X 是测试用例的编号（从 1 开始）。</p>
-<p><strong>输入样例:</strong></p>
-<p>在这里给出一组输入。例如：</p>
-<pre class="language-cpp" data-language="cpp"><code class="language-cpp"><span class="token number">4</span>
-<span class="token number">1</span> <span class="token number">2</span> <span class="token number">3</span>
-<span class="token number">2</span> <span class="token number">3</span> <span class="token number">4</span>
-<span class="token number">2147483647</span> <span class="token number">0</span> <span class="token number">2147483646</span>
-<span class="token number">0</span> <span class="token operator">-</span><span class="token number">2147483648</span> <span class="token operator">-</span><span class="token number">2147483647</span></code></pre>
-
-<p><strong>输出样例:</strong></p>
-<p>在这里给出相应的输出。例如：</p>
-<pre class="language-cpp" data-language="cpp"><code class="language-cpp">Case #<span class="token number">1</span><span class="token operator">:</span> <span class="token boolean">false</span>
-Case #<span class="token number">2</span><span class="token operator">:</span> <span class="token boolean">true</span>
-Case #<span class="token number">3</span><span class="token operator">:</span> <span class="token boolean">true</span>
-Case #<span class="token number">4</span><span class="token operator">:</span> <span class="token boolean">false</span></code></pre>
-
-
-
-<h1 id="成绩等级分类"><a href="#成绩等级分类" class="headerlink" title="成绩等级分类"></a>成绩等级分类</h1><p>已知学生成绩与等级的对应关系为：<br>等级A: 90≤ score≤100<br>等级B: 80≤ score&lt;90<br>等级C: 70≤ score&lt;80<br>等级D: 60≤ score&lt;70<br>等级E: score&lt;60<br>编写程序输出学生成绩对应的等级。</p>
-<p><strong>输入格式:</strong></p>
-<p>输入成绩数值，比如50</p>
-<p>输出格式:</p>
-<p>输出50对应的等级 E</p>
-<p><strong>输入样例1:</strong></p>
-<pre class="language-cpp" data-language="cpp"><code class="language-cpp"><span class="token number">50</span></code></pre>
-
-<p><strong>输出样例1:</strong></p>
-<p>在这里给出相应的输出。例如：</p>
-<pre class="language-cpp" data-language="cpp"><code class="language-cpp">成绩等级为E</code></pre>
-
-<p><strong>输入样例2:</strong></p>
-<pre class="language-cpp" data-language="cpp"><code class="language-cpp"><span class="token number">105</span></code></pre>
-
-<p><strong>输出样例2:</strong></p>
-<p>在这里给出相应的输出。例如：</p>
-<pre class="language-cpp" data-language="cpp"><code class="language-cpp">成绩输入错误</code></pre>
-
-
-
-<h1 id="（3n-1）猜想"><a href="#（3n-1）猜想" class="headerlink" title="（3n+1）猜想"></a>（3n+1）猜想</h1><p>卡拉兹(Callatz)猜想：</p>
-<p>对任何一个自然数n，如果它是偶数，那么把它砍掉一半；如果它是奇数，那么把(3n+1)砍掉一半。这样一直反复砍下去，最后一定在某一步得到n=1。卡拉兹在1950年的世界数学家大会上公布了这个猜想，传说当时耶鲁大学师生齐动员，拼命想证明这个貌似很傻很天真的命题，结果闹得学生们无心学业，一心只证(3n+1)，以至于有人说这是一个阴谋，卡拉兹是在蓄意延缓美国数学界教学与科研的进展……</p>
-<p>我们今天的题目不是证明卡拉兹猜想，而是对给定的任一不超过1000的正整数n，简单地数一下，需要多少步（砍几下）才能得到n=1？</p>
-<p><strong>输入格式:</strong></p>
-<p>每个测试输入包含1个测试用例，即给出自然数n的值。</p>
-<p><strong>输出格式:</strong></p>
-<p>输出从n计算到1需要的步数。</p>
-<p><strong>输入样例:</strong></p>
-<pre class="language-cpp" data-language="cpp"><code class="language-cpp"><span class="token number">3</span></code></pre>
-
-<p><strong>输出样例:</strong></p>
-<pre class="language-cpp" data-language="cpp"><code class="language-cpp"><span class="token number">5</span></code></pre>
-
-<h1 id=""><a href="#" class="headerlink" title=""></a></h1>
                 
             </div>
             <hr/>
